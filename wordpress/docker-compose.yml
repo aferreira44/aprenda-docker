@@ -1,0 +1,10 @@
+wordpress:
+    image: wordpress:fpm
+    ports:
+        - 9000:80
+    links: 
+        - wordpress_db:mysql
+wordpress_db:
+    image: mariadb
+    environment:
+        MYSQL_ROOT_PASSWORD: examplepass

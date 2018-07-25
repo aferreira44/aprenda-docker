@@ -1,0 +1,7 @@
+wordpress:
+    image: wordpres
+	s
+    links: 
+        - wordpress_db:mysql
+wordpress_db:
+    image: mariadb
